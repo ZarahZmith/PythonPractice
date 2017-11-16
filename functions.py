@@ -42,7 +42,7 @@ def tempConverter(temp, num=1):
     else:
         result = 0
         print ("Temp not valid")
-    return (result)
+    print (result)
 
 ################################################################################
 ##Main Program
@@ -54,6 +54,6 @@ print (power(6))
 print (multi_add(3,5,6,8,9))
 
 #tempConverter
-print (tempConverter(12.78))
-print (tempConverter(100,2))
-print (tempConverter(100,3))
+tempConverter(40)
+tempConverter(67,2)
+tempConverter(89,3)
