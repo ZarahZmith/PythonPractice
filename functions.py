@@ -35,13 +35,13 @@ def tempConverter(temp, num=1):
 
     if num == 1:
         result = celsius_to_fahrenheit(temp)
-        return (str(temp) + " celsius to fehrenheit:")
+        print (str(temp) + " celsius to fehrenheit:")
     elif num == 2:
         result = fahrenheit_to_celsius(temp)
-        return (str(temp) + " fahrenheit to celsius:")
+        print (str(temp) + " fahrenheit to celsius:")
     else:
         result = 0
-        return ("Temp not valid")
+        print ("Temp not valid")
     return (result)
 
 ################################################################################
