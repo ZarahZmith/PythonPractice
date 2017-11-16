@@ -26,6 +26,24 @@ def multi_add(*args):
         result = result + x
     return result
 
+def tempConverter(temp, num=1):
+    def celsius_to_fahrenheit(c_temp):
+        return 9.0/5.0* c_temp + 32
+
+    def fahrenheit_to_celsius(f_temp):
+        return (f_temp - 32.0) * 5.0/9.0
+
+    if num == 1:
+        result = celsius_to_fahrenheit(temp)
+        return (str(temp) + " celsius to fehrenheit:")
+    elif num == 2:
+        result = fahrenheit_to_celsius(temp)
+        return (str(temp) + " fahrenheit to celsius:")
+    else:
+        result = 0
+        return ("Temp not valid")
+    return (result)
+
 ################################################################################
 ##Main Program
 
@@ -34,3 +52,8 @@ print (funct2(2017, "Sarah"))
 print (cube(6))
 print (power(6))
 print (multi_add(3,5,6,8,9))
+
+#tempConverter
+print (tempConverter(12.78))
+print (tempConverter(100,2))
+print (tempConverter(100,3))
